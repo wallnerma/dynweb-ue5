@@ -1,0 +1,6 @@
+<h1>{{gallery.name}}</h1>
+<div class="clearfix">
+  {{#each gallery.images}}
+    {{>orderableImgThumb galleryUri=../gallery.uri}}
+  {{/each}}
+</div>

@@ -1,0 +1,34 @@
+<h1>Bestellung aufgeben</h1>
+<form action="/shopping-cart/order" method="post" class="order-form">
+  <div class="form-row">
+    <label>
+      <span>Vorname</span>
+      <input name="firstName" type="text" required autofocus>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      <span>Nachname</span>
+      <input name="lastName" type="text" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label><span>Straße und Hausnummer</span>
+      <input name="street" type="text" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label><span>Postleitzahl und Ort</span>
+      <input name="zipCity" type="text" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label><span>Telefonnummer für Rückfragen (optional)</span>
+      <input name="phone" type="tel">
+    </label>
+  </div>
+
+  <div class="form-row">
+    <button type="submit" class="prime-cta">Bestellen &rarr;</button>
+  </div>
+</form>

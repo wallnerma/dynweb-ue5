@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photopick</title>
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container">
+    <span class="site-id">Fotograf Lutz Maier</span>
+    <nav>
+      <a href="/">Startseite</a> &middot;
+      <a href="/galleries">Gallerien</a> &middot;
+      <a href="/shopping-cart">Warenkorb</a>
+    </nav>
+  </div>
+</header>
+
+<section class="main">
+  <div class="container">
+    {{> (lookup . 'bodyPartial') }}
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span class="subtle">&copy; Copyright {{currentYear}}</span>
+  </div>
+</footer>
+</body>
+</html>

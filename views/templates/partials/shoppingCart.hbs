@@ -1,0 +1,26 @@
+<h1>Warenkorb</h1>
+<p>
+  {{#if shoppingCart.itemCount}}
+    Anzahl Bilder: {{shoppingCart.itemCount}}
+  {{else}}
+    Warenkorb leer. <a href="/galleries" class="prime-cta">Zu meinen Bildern &rarr;</a>
+  {{/if}}
+</p>
+
+{{#if shoppingCart.images}}
+<p>
+  <a href="/shopping-cart/order" class="prime-cta">Bestellen &rarr;</a>
+</p>
+{{/if}}
+
+<div>
+  {{#each shoppingCart.images}}
+    {{>imgThumb}}
+  {{/each}}
+</div>
+
+{{#if shoppingCart.images}}
+  <form action="/shopping-cart/clear" method="post" class="clear-shopping-card">
+    <button type="submit">Warenkorb leeren &rarr;</button>
+  </form>
+{{/if}}

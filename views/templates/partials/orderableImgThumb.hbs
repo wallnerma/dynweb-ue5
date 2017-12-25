@@ -1,0 +1,11 @@
+<div class="img-thumbnail">
+  <img class="thumbnail" src="{{imgUri}}">
+  <div class="label subtle">{{label}}</div>
+  <div>
+    <form action="/shopping-cart/add" method="post">
+      <input type="hidden" name="imgId" value="{{imgId}}">
+      <input type="hidden" name="returnUri" value="{{galleryUri}}">
+      <button type="submit" class="order-btn">In der Warenkorb &rarr;</button>
+    </form>
+  </div>
+</div>

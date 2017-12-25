@@ -1,0 +1,10 @@
+<div class="img-thumbnail">
+  <img class="thumbnail" src="{{imgUri}}">
+  <div class="label subtle">{{label}}</div>
+  <div>
+    <form action="/shopping-cart/remove" method="post">
+      <input type="hidden" name="imgId" value="{{imgId}}">
+      <button type="submit" class="remove-btn">Entfernen &rarr;</button>
+    </form>
+  </div>
+</div>
