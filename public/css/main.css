@@ -126,3 +126,6 @@ form.clear-shopping-card {
   margin-top: 2em;
 }
 
+#userlogout {
+  float: right;
+}

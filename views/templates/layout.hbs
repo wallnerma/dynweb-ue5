@@ -14,6 +14,12 @@
       <a href="/galleries">Gallerien</a> &middot;
       <a href="/shopping-cart">Warenkorb</a>
     </nav>
+  <div id="userlogout">
+  {{#if user}}
+      <span>{{ user }} &middot;</span>
+      <a href="/logout">Logout</a>
+  {{/if}}
+  </div>
   </div>
 </header>
 
